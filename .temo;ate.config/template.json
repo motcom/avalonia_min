@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "motti",
+    "classifications": ["Avalonia", "Minimal", "NoXaml"],
+    "name": "Avalonia Minimal (No XAML)",
+    "identity": "motti.avalonia.minimal",
+    "shortName": "avalonia.min",
+    "sourceName": "avalonia_min",
+    "preferNameDirectory": true
+}
