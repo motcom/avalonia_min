@@ -5,13 +5,20 @@ namespace avalonia_min;
 
 public static class Ui
 {
-    public static TextBlock CrreateTextBlock()
+    public static ScrollViewer CreateScrollViewer()
+    {
+        return new ScrollViewer
+        {
+            HorizontalScrollBarVisibility = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto,
+            VerticalScrollBarVisibility = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto,
+        };
+
+    }
+    public static TextBlock CreateTextBlock()
     {
         return new TextBlock
         {
             FontSize = 10,
-            Height = 20,
-            MinHeight = 20,
             Margin = new Thickness(2),
             Padding = new Thickness(3),
         };
