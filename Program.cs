@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace avalonia_textbox;
+namespace avalonia_min;
 
 class Program
 {

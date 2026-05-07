@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Themes.Fluent;
 
-namespace avalonia_textbox;
+namespace avalonia_min;
 
 public class App : Application
 {

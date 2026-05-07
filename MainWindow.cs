@@ -1,7 +1,7 @@
 using Avalonia;
 using Avalonia.Controls;
 
-namespace avalonia_textbox;
+namespace avalonia_min;
 
 public class MainWindow : Window
 {
@@ -10,11 +10,25 @@ public class MainWindow : Window
         Width = 360;
         Height = 120;
 
-        Content = new TextBox
+
+        // Create
+        Label labelSrcPath = Ui.CreateLabel("SrcPath");
+        TextBox tbSrcPath = Ui.CreateTextBox();
+        Button btnGetSrcPath = Ui.CreateButton("Get");
+
+
+        // Layout
+        Grid gridGetPath = new Grid
         {
-            Text = "Hello, Avalonia!",
-            Width = 240,
-            Margin = new Thickness(16)
+            ColumnDefinitions = ColumnDefinitions.Parse("Auto,*,Auto"),
+            RowDefinitions = RowDefinitions.Parse("Auto"),
         };
+        Grid.SetColumn(labelSrcPath, 0);
+        Grid.SetColumn(tbSrcPath, 1);
+        Grid.SetColumn(btnGetSrcPath, 2);
+
+        gridGetPath.Children.Add(labelSrcPath);
+
+        Content = gridGetPath;
     }
 }
