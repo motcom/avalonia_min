@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia;
 using Avalonia.Media;
-namespace RenameGui;
+namespace avalonia_min;
 
 public static class Ui
 {

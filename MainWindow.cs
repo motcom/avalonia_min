@@ -28,6 +28,8 @@ public class MainWindow : Window
         Grid.SetColumn(btnGetSrcPath, 2);
 
         gridGetPath.Children.Add(labelSrcPath);
+        gridGetPath.Children.Add(tbSrcPath);
+        gridGetPath.Children.Add(btnGetSrcPath);
 
         Content = gridGetPath;
     }
